@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>fahren to cel</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>"
+</head>
+<body>
+    <div class="box">
+    <i class="fa-solid fa-temperature-high"></i>
+    <h1>Temperature Converter</h1>
+    
+    <div>
+        <input type="number" class="value" value="0" />
+        <select class="unit1">
+          <option value="c">Celsius</option>
+          <option value="f">Fahrenheit</option>
+          <option value="k">Kelvin</option>
+        </select>
+      </div>
+
+       <div> 
+        <select class="unit2">
+          <option value="c">Celsius</option>
+          <option value="f">Fahrenheit</option>
+          <option value="k">Kelvin</option>
+        </select>
+        <input type="number" class="result" value="0" readonly />
+      </div>
+      <div class="buttons">
+        
+          <button type="submit" onclick="check()">Convert</button>
+        <div>
+          <button class="reset" type="reset" onclick="reset()">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+    </div>
+</body>
+</html>
