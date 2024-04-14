@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+   
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    background-color: rgb(28, 171, 38);
+}
+.clock{
+    border: 1px solid #ac3737;
+    color: rgb(14, 13, 14);
+    padding :20px;
+    border-radius: 20px;
+    margin: 15px;
+    background-color: rgb(151, 224, 61);
+
+}
+#Date{
+    font-size: 20px !important;
+    text-align: center;
+
+}
+
+.clock ul{
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #bbd3d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.calculator{
+    background: #9a057a;
+    padding: 20px;
+    border-radius: 30px;
+    color: #8dd21f;
+    box-shadow: -8px -8px 15px rgba(101, 75, 75, 0.1),5px 5px 15px rgba(202, 188, 188, 0.2);
+    margin: 10px;
+    border: 2px solid rgb(68, 185, 187);
+    margin-left: 100px;
+    min-width: 400px;
+    max-width: 200px;
+    margin: 0 auto; 
+}
+p {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 0px;
+  }
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 50px;
+    
+    box-shadow: -10px -10px 15px rgba(114, 60, 60, 0.1);
+    background: transparent;
+    font-size: 25px;
+    color: #020202;
+    cursor: pointer;
+    margin: 10px;
+    background-color: #8dd21f;
+    
+}
+.calculator form input:hover{
+    box-shadow: 5px 5px 15px rgba(23, 241, 41, 0.2);
+    border-radius: 50px;
+    
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 5px ;
+    border-radius: 5px;
+    background-color: rgb(51, 199, 219);
+
+}
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+form input.equ{
+    width: 120px;
+}
+@media (min-width: 400px) {
+    .calculator {
+        /* Adjust styles for larger screens */
+        max-width: 200px; /* Adjust the maximum width of the calculator */
+        margin: 0 auto; /* Center the calculator horizontally */
+    }
+}
+
+/* Media query for screens larger than 900px */
+@media (min-width: 900px) {
+    .calculator {
+        /* Further adjustments for larger screens */
+        max-width: 600px; /* Adjust the maximum width of the calculator */
+    }
+}

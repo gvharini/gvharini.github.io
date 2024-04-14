@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bmi">
+  <div class="background-image"></div>
+    <div class="box" id="box">
+    
+      <h1></h1>
+
+      <div class="weight">
+        <h3>Weight :</h3>
+        <input type="number" class="wt" value="0" />
+        <select class="unit1">
+          <option value="kg">Kg</option>
+          <option value="lb">Pounds</option>
+        </select>
+      </div>
+
+      <div class="height">
+        <h3>Height :</h3>
+        <input type="number" class="ht" value="0" />
+        <select class="unit2">
+          <option value="cm">Centimeters</option>
+          <option value="m">Meters</option>
+          <option value="f">Feet</option>
+          <option value="i">Inches</option>
+        </select>
+      </div>
+
+      <div class="computation">
+        <div class="result"><h2 id="result">0</h2></div>
+        <div class="resultWord" id="resultWord">
+          <p id="resultWordP">Health</p>
+        </div>
+        <div class="butWord">
+          <div class="buttons">
+            <i class="fa-sharp fa-solid fa-child"></i>
+            <button type="submit" onclick="compute()">Compute</button>
+            <button class="reset" type="reset" onclick="reset()">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <section class="information">
+      <div class="uw">
+        <h5></h5>
+        <p></p>
+      </div>
+
+      <div class="nrm">
+        <h5></h5>
+        <p></p>
+      </div>
+
+      <div class="ov">
+        <h5></h5>
+        <p></p>
+      </div>
+
+      <div class="ob">
+        <h5></h5>
+        <p></p>
+      </div>  
+    </section>
+  </div>  
+    <div class="footer">
+      <a
+        class="copyright"
+        target="_blank"
+        href="https://Harini-gv.github.io/"
+        >&#169; Harini G V</a
+      >
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
