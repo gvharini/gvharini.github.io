@@ -63,7 +63,7 @@ nav ul a:hover{
     grid-template-columns: repeat(3, 1fr);
     padding: 50px 20px;
     grid-column-gap: 10px;
-    background: rgb(198, 200, 194);
+    /*background: rgb(198, 200, 194);*/
 
     
 }
@@ -81,76 +81,140 @@ nav ul a:hover{
     object-fit: cover;
     filter: brightness(1.0);
 }
-.item img:hover{
-    transform: scale(1.04);
-}
 .item h4{
     padding: 5px;
     text-align: center;
 }
-.item1 button{
-    padding: 5px 30px;
+.item1 {
+    text-align: center;
+  }
+  
+  .calculator-button {
+    position: relative;
     border: none;
-    outline: none;
-    background-color: rgb(16, 24, 9);
-    color:white;
+    background: none;
     cursor: pointer;
-    border-radius: 4px;
-    font-size: 20px;
+    padding: 0;
+  }
+  
+  .calculator-button img {
+    border-radius: 50%;
     display: block;
-    margin: 0 auto;
-}
-.item2 button{
-    padding: 5px 30px;
+  }
+  
+  .image-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .item2 {
+    text-align: center;
+  }
+  
+  .calculator-button1 {
+    position: relative;
     border: none;
-    outline: none;
-    background-color: rgb(16, 24, 9);
-    color:white;
+    background: none;
     cursor: pointer;
-    border-radius: 4px;
-    font-size: 20px;
+    padding: 0;
+  }
+  
+  .calculator-button1 img {
+    border-radius: 50%;
     display: block;
-    margin: 0 auto;
-}
-.item3 button{
-    padding: 5px 30px;
+  }
+  
+  .image1-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .item3 {
+    text-align: center;
+  }
+    
+  .calculator-button2 {
+    position: relative;
     border: none;
-    outline: none;
-    background-color: rgb(16, 24, 9);
-    color:white;
+    background: none;
     cursor: pointer;
-    border-radius: 4px;
-    font-size: 20px;
+    padding: 0;
+  }
+    
+  .calculator-button2 img {
+    border-radius: 50%;
     display: block;
-    margin: 0 auto;
-}
-
-.item4 button{
-    padding: 5px 30px;
+  }
+    
+  .image2-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .item4 {
+    text-align: center;
+  }
+    
+  .calculator-button3 {
+    position: relative;
     border: none;
-    outline: none;
-    background-color: rgb(16, 24, 9);
-    color:white;
+    background: none;
     cursor: pointer;
-    border-radius: 4px;
-    font-size: 20px;
+    padding: 0;
+  }
+    
+  .calculator-button3 img {
+    border-radius: 50%;
     display: block;
-    margin: 0 auto;
-}
+  }
+    
+  .image3-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
 .items button{
     padding:20px;
     gap: 10px;
 }
-.item img:hover{
-    transform: scale(1.08);
+.item1 img:hover{
+    transform: scale(1.07);
+}
+.item2 img:hover{
+    transform: scale(1.07);
+}
+.item3 img:hover{
+    transform: scale(1.07);
+}
+.item4 img:hover{
+    transform: scale(1.07);
 }
 
-div li{
-    background-color: rgb(126, 251, 128);
-    display: grid;
-    place-items: center;
-
-}
 @media screen and (max-width: 1000px )
 {
     .items{
