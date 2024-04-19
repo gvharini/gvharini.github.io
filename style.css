@@ -10,43 +10,51 @@ body{
     box-sizing: border-box;
     background-color: #cdd0d5;
     min-height: 100vh;
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', serif;
 }
 
-h1{
-    
-    text-align: center;
-    color: green;
-    padding: 5px;
-}
-
-h2{
-    text-align: center;
-    color: green;
-    padding: 10px;
-}
-h3{
-    text-align: center;
-    color: green;
-    padding: 10px;
-}
-
-nav{
-    background-color: lime;
-    display: grid;
-    place-items: center;
-
-}
-nav ul{
-    list-style-type: none;
-}
-nav ul a{
+#logo { 
     display: inline-block;
-    padding: 20px;
-    text-decoration: none;
-    color: #962424;
-    transition: 0.2s ease-in;
-    font-size: 18px;
+    width: 100px; 
+    height: auto;
 }
+
+.clear {
+ clear: both;
+}
+
+
+#nav {
+   background-color: orange;  /*turns nav bar white*/
+   color: white;
+   width: 100%;
+
+}
+.nav {
+ float: right;
+ list-style: none;    /*gets rid of bullet points*/ 
+   text-align: left;
+   /*padding: 0px -10px 0px -10px; */
+ margin: 0;
+}
+.nav > li {                                                             /*max-width: 768px*/
+   display:Inline-block;
+   padding: 10px 9px 10px 9px;                               /*nav bar text*/
+}
+
+.nav > li a {                                               
+    text-decoration: none;
+    color: blue;
+    font-size: 14px;
+    padding: 5px 0px 5px 0px
+}
+
+.nav > li > a:hover {
+    color: black;
+}
+
 .item1 {
     text-align: center;
   }
@@ -177,7 +185,13 @@ nav ul a{
 .item4 img:hover{
     transform: scale(1.07);
 }
+@media screen and (max-width: 320px) { 
+  body { 
+      margin:0; padding: 0; font-family: 'Roboto', serif; 
+}
 
+#logo{ display: none; } 
+}
 @media screen and (max-width: 1000px )
 {
     .items{

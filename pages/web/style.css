@@ -9,6 +9,7 @@ h1{
     text-align: center;
     color: green;
     padding: 5px;
+
 }
 
 h2{
@@ -31,18 +32,6 @@ nav{
 nav ul{
     list-style-type: none;
 }
-nav ul a{
-    display: inline-block;
-    padding: 20px;
-    text-decoration: none;
-    color: #000;
-    transition: 0.2s ease-in;
-    font-size: 18px;
-}
-nav ul a:hover{
-    background-color: green;
-    color: white;
-}
 
 .c-img{
     height: 500px;
@@ -55,7 +44,7 @@ nav ul a:hover{
     grid-template-columns: repeat(3, 1fr);
     padding: 50px 20px;
     grid-column-gap: 10px;
-    background: rgb(198, 200, 194);
+    background: rgb(135, 193, 18);
 
     
 }
@@ -81,10 +70,12 @@ nav ul a:hover{
     text-align: center;
 }
 .item button{
+    
     padding: 5px 30px;
     border: none;
     outline: none;
-    background-color: chartreuse;
+    transform: translateX(-50%);
+    background-color: rgb(70, 167, 21);
     color:white;
     cursor: pointer;
     border-radius: 4px;
@@ -92,9 +83,10 @@ nav ul a:hover{
     display: block;
     margin: 0 auto;
 }
-.item button:hover{
+
+/*.item button:hover{
     transform: scale(1.08);
-}
+}*/
 
 
 div li{
