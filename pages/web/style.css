@@ -24,7 +24,7 @@ h3{
 }
 
 nav{
-    background-color: rgb(126, 251, 128);
+    background-color: rgb(195, 206, 195);
     display: grid;
     place-items: center;
 
@@ -44,7 +44,7 @@ nav ul{
     grid-template-columns: repeat(3, 1fr);
     padding: 50px 20px;
     grid-column-gap: 10px;
-    background: rgb(135, 193, 18);
+    background: rgb(207, 211, 200);
 
     
 }
