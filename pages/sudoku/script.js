@@ -83,3 +83,55 @@ colorSelector.addEventListener("change", (e) => {
 clearButton.addEventListener("click", () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const canvas = document.getElementById("canvas");
+    const context = canvas.getContext("2d");
+    let isDrawing = false;
+
+    canvas.addEventListener("mousedown", startDrawing);
+    canvas.addEventListener("touchstart", startDrawing);
+
+    canvas.addEventListener("mousemove", draw);
+    canvas.addEventListener("touchmove", draw);
+
+    canvas.addEventListener("mouseup", stopDrawing);
+    canvas.addEventListener("touchend", stopDrawing);
+
+    document.getElementById("clearButton").addEventListener("click", clearCanvas);
+
+    function startDrawing(e) {
+        isDrawing = true;
+        draw(e);
+    }
+
+    function draw(e) {
+        if (!isDrawing) return;
+
+        e.preventDefault();
+
+        let x, y;
+        if (e.type === "touchstart" || e.type === "touchmove") {
+            x = e.touches[0].clientX - canvas.getBoundingClientRect().left;
+            y = e.touches[0].clientY - canvas.getBoundingClientRect().top;
+        } else {
+            x = e.offsetX;
+            y = e.offsetY;
+        }
+
+        context.lineTo(x, y);
+        context.stroke();
+        context.beginPath();
+        context.moveTo(x, y);
+    }
+
+    function stopDrawing() {
+        isDrawing = false;
+        context.beginPath();
+    }
+
+    function clearCanvas() {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+    }
+});
